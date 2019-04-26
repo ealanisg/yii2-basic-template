@@ -1,0 +1,1743 @@
+2019-04-26 04:20:04 [10.10.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+    in /var/www/acervos/_protected/views/layouts/main.php:90
+    in /var/www/acervos/_protected/controllers/SiteController.php:89
+2019-04-26 04:20:04 [10.10.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+2019-04-26 04:20:03 [10.10.10.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'acervos.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-US,es-419;q=0.9,es;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at acervos.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'acervos.local'
+    'SERVER_ADDR' => '10.10.10.12'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.10.1'
+    'DOCUMENT_ROOT' => '/var/www/acervos'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/acervos'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/acervos/index.php'
+    'REMOTE_PORT' => '60234'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1556252402.975
+    'REQUEST_TIME' => 1556252402
+]
+2019-04-26 05:43:07 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'sa'@'10.10.10.12' (using password: YES) in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=10.1...', 'sa', 'conarte20386', NULL)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'sa'@'10.10.10.12' (using password: YES) in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2019-04-26 05:43:07 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556257387.2049
+    'REQUEST_TIME' => 1556257387
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 05:43:55 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'sa'@'localhost' (using password: YES) in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'sa', 'conarte20386', NULL)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'sa'@'localhost' (using password: YES) in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2019-04-26 05:43:55 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556257435.5746
+    'REQUEST_TIME' => 1556257435
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 05:46:38 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('sqlsrv:host=loc...', 'sa', 'conarte20386', NULL)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#18 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#24 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#25 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#26 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: could not find driver in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#25 {main}
+Additional Information:
+
+2019-04-26 05:46:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556257597.7592
+    'REQUEST_TIME' => 1556257597
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 05:53:41 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('sqlsrv:host=loc...', 'sa', 'conarte20386', NULL)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#18 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#24 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#25 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#26 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: could not find driver in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#25 {main}
+Additional Information:
+
+2019-04-26 05:53:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556258020.6029
+    'REQUEST_TIME' => 1556258020
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 05:53:41 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'pdo_sqlsrv.so' (tried: /usr/lib/php/20170718/pdo_sqlsrv.so (/usr/lib/php/20170718/pdo_sqlsrv.so: undefined symbol: php_pdo_register_driver), /usr/lib/php/20170718/pdo_sqlsrv.so.so (/usr/lib/php/20170718/pdo_sqlsrv.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-26 05:53:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556258020.6029
+    'REQUEST_TIME' => 1556258020
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 05:54:13 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('sqlsrv:host=loc...', 'sa', 'conarte20386', NULL)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#18 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#24 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#25 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#26 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: could not find driver in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#25 {main}
+Additional Information:
+
+2019-04-26 05:54:13 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556258053.0572
+    'REQUEST_TIME' => 1556258053
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 05:54:13 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'pdo_sqlsrv.so' (tried: /usr/lib/php/20170718/pdo_sqlsrv.so (/usr/lib/php/20170718/pdo_sqlsrv.so: undefined symbol: php_pdo_register_driver), /usr/lib/php/20170718/pdo_sqlsrv.so.so (/usr/lib/php/20170718/pdo_sqlsrv.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-26 05:54:13 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556258053.0572
+    'REQUEST_TIME' => 1556258053
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 06:08:35 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('sqlsrv:host=loc...', 'sa', 'conarte20386', NULL)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#18 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#24 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#25 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#26 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: could not find driver in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#25 {main}
+Additional Information:
+
+2019-04-26 06:08:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/etc/php/7.2/apache2/conf.d'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/var/www/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556258915.4157
+    'REQUEST_TIME' => 1556258915
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 06:08:35 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'pdo_sqlsrv.so' (tried: /usr/lib/php/20170718/pdo_sqlsrv.so (/usr/lib/php/20170718/pdo_sqlsrv.so: undefined symbol: php_pdo_register_driver), /usr/lib/php/20170718/pdo_sqlsrv.so.so (/usr/lib/php/20170718/pdo_sqlsrv.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-26 06:08:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/etc/php/7.2/apache2/conf.d'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/var/www/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556258915.4157
+    'REQUEST_TIME' => 1556258915
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 06:14:24 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Module 'sqlsrv' already loaded in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-26 06:14:24 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/etc/php/7.2/cli/conf.d'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/var/www/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556259264.3163
+    'REQUEST_TIME' => 1556259264
+    'argv' => [
+        0 => 'yii'
+    ]
+    'argc' => 1
+]
+2019-04-26 06:18:04 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Module 'sqlsrv' already loaded in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-26 06:18:04 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/etc/php/7.2/apache2/conf.d'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/var/www/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556259484.2842
+    'REQUEST_TIME' => 1556259484
+    'argv' => [
+        0 => 'yii'
+    ]
+    'argc' => 1
+]
+2019-04-26 06:20:42 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Module 'sqlsrv' already loaded in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-26 06:20:42 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/etc/php/7.2/apache2/conf.d'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/var/www/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556259642.3488
+    'REQUEST_TIME' => 1556259642
+    'argv' => [
+        0 => 'yii'
+    ]
+    'argc' => 1
+]
+2019-04-26 06:31:36 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Module 'sqlsrv' already loaded in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-26 06:31:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '12'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 61072 22'
+    'SSH_TTY' => '/dev/pts/1'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 61072 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/ubuntu'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556260295.5547
+    'REQUEST_TIME' => 1556260295
+    'argv' => [
+        0 => 'yii'
+    ]
+    'argc' => 1
+]
+2019-04-26 06:39:32 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Module 'sqlsrv' already loaded in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-26 06:39:32 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/etc/php/7.2/apache2/conf.d'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/var/www/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556260772.3016
+    'REQUEST_TIME' => 1556260772
+    'argv' => [
+        0 => 'yii'
+    ]
+    'argc' => 1
+]
+2019-04-26 14:06:01 [10.10.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+    in /var/www/acervos/_protected/views/layouts/main.php:90
+    in /var/www/acervos/_protected/controllers/SiteController.php:89
+2019-04-26 14:06:01 [10.10.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+2019-04-26 14:06:00 [10.10.10.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ko9anenq00rp7s00vmt1sr45tb'
+    '_csrf' => '9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'acervos.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-US,es-419;q=0.9,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ko9anenq00rp7s00vmt1sr45tb; _csrf=9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at acervos.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'acervos.local'
+    'SERVER_ADDR' => '10.10.10.12'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.10.1'
+    'DOCUMENT_ROOT' => '/var/www/acervos'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/acervos'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/acervos/index.php'
+    'REMOTE_PORT' => '53926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1556287559.903
+    'REQUEST_TIME' => 1556287559
+]
+2019-04-26 14:06:31 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[IMSSP]: An invalid keyword 'host' was specified in the DSN string. in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('sqlsrv:host=loc...', 'sa', 'conarte20386', NULL)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#18 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#24 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#25 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#26 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: SQLSTATE[IMSSP]: An invalid keyword 'host' was specified in the DSN string. in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#25 {main}
+Additional Information:
+Array
+(
+    [0] => IMSSP
+    [1] => -42
+    [2] => An invalid keyword 'host' was specified in the DSN string.
+)
+
+2019-04-26 14:06:30 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556287590.7437
+    'REQUEST_TIME' => 1556287590
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 14:07:00 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[IMSSP]: An invalid keyword 'host' was specified in the DSN string. in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('sqlsrv:host=10....', 'sa', 'conarte20386', NULL)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#16 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#18 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#24 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#25 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#26 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: SQLSTATE[IMSSP]: An invalid keyword 'host' was specified in the DSN string. in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('migration')
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('migration')
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#6 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(483): yii\db\Command->queryAll()
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(493): yii\db\mssql\Schema->findTableConstraints(Object(yii\db\mssql\TableSchema), 'PRIMARY KEY')
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/mssql/Schema.php(172): yii\db\mssql\Schema->findPrimaryKeys(Object(yii\db\mssql\TableSchema))
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mssql\Schema->loadTableSchema('migration')
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#14 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#15 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#25 {main}
+Additional Information:
+Array
+(
+    [0] => IMSSP
+    [1] => -42
+    [2] => An invalid keyword 'host' was specified in the DSN string.
+)
+
+2019-04-26 14:07:00 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556287620.1421
+    'REQUEST_TIME' => 1556287620
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 14:17:28 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Introducing FOREIGN KEY constraint 'FK__auth_item__child__440B1D61' on table 'auth_item_child' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints. in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('CREATE TABLE [a...')
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Migration.php(323): yii\db\Command->execute()
+#3 /var/www/acervos/_protected/console/migrations/m141022_115912_create_rbac_tables.php(63): yii\db\Migration->createTable('{{%auth_item_ch...', Array, NULL)
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141022_115912_create_rbac_tables->up()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141022_115912_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Introducing FOREIGN KEY constraint 'FK__auth_item__child__440B1D61' on table 'auth_item_child' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+The SQL being executed was: CREATE TABLE [auth_item_child] (
+	[parent] nvarchar(64) NOT NULL,
+	[child] nvarchar(64) NOT NULL,
+	PRIMARY KEY (parent, child),
+	FOREIGN KEY (parent) REFERENCES [auth_item] (name) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (child) REFERENCES [auth_item] (name) ON DELETE CASCADE ON UPDATE CASCADE
+) in /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE [a...')
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('CREATE TABLE [a...')
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/db/Migration.php(323): yii\db\Command->execute()
+#3 /var/www/acervos/_protected/console/migrations/m141022_115912_create_rbac_tables.php(63): yii\db\Migration->createTable('{{%auth_item_ch...', Array, NULL)
+#4 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141022_115912_create_rbac_tables->up()
+#5 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141022_115912_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#11 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1785
+    [2] => [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Introducing FOREIGN KEY constraint 'FK__auth_item__child__440B1D61' on table 'auth_item_child' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+)
+
+2019-04-26 14:17:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556288243.2569
+    'REQUEST_TIME' => 1556288243
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-04-26 14:39:27 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "init". in /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('init', Array)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('init', Array)
+#2 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "init". in /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/acervos/_protected/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('init', Array)
+#1 /var/www/acervos/_protected/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/acervos/_protected/yii(20): yii\base\Application->run()
+#3 {main}
+2019-04-26 14:39:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '3'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 58676 22'
+    'OLDPWD' => '/home/ubuntu/acervos'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'ubuntu'
+    'MAIL' => '/var/mail/ubuntu'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/mssql-tools/bin:/opt/mssql-tools/bin'
+    'PWD' => '/home/ubuntu/acervos/_protected'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/ubuntu'
+    'LOGNAME' => 'ubuntu'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 58676 10.0.2.15 22'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1556289567.261
+    'REQUEST_TIME' => 1556289567
+    'argv' => [
+        0 => 'yii'
+        1 => 'init'
+    ]
+    'argc' => 2
+]
+2019-04-26 14:49:34 [10.10.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+    in /var/www/acervos/_protected/views/layouts/main.php:90
+    in /var/www/acervos/_protected/controllers/SiteController.php:89
+2019-04-26 14:49:34 [10.10.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+2019-04-26 14:49:34 [10.10.10.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ko9anenq00rp7s00vmt1sr45tb'
+    '_csrf' => '9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'acervos.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-US,es-419;q=0.9,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ko9anenq00rp7s00vmt1sr45tb; _csrf=9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at acervos.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'acervos.local'
+    'SERVER_ADDR' => '10.10.10.12'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.10.1'
+    'DOCUMENT_ROOT' => '/var/www/acervos'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/acervos'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/acervos/index.php'
+    'REMOTE_PORT' => '54895'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1556290173.975
+    'REQUEST_TIME' => 1556290173
+]
+2019-04-26 14:49:39 [10.10.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+    in /var/www/acervos/_protected/views/layouts/main.php:90
+    in /var/www/acervos/_protected/controllers/SiteController.php:261
+2019-04-26 14:49:39 [10.10.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+2019-04-26 14:49:38 [10.10.10.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ko9anenq00rp7s00vmt1sr45tb'
+    '_csrf' => '9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'acervos.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://acervos.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-US,es-419;q=0.9,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ko9anenq00rp7s00vmt1sr45tb; _csrf=9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at acervos.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'acervos.local'
+    'SERVER_ADDR' => '10.10.10.12'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.10.1'
+    'DOCUMENT_ROOT' => '/var/www/acervos'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/acervos'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/acervos/index.php'
+    'REMOTE_PORT' => '54904'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1556290178.035
+    'REQUEST_TIME' => 1556290178
+]
+2019-04-26 14:50:05 [10.10.10.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+2019-04-26 14:50:04 [10.10.10.1][1][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => '9hAGBDLX7RY_s6i3HpA9MY6p43VVTpZNeikah07BHdOCXU5yZJCiSWqe4MJp8WJ6vOyoAx0v9CEMBG6-F4JLgg=='
+    'SignupForm' => [
+        'username' => 'ealanisg@nubaltum.com'
+        'email' => 'ealanisg@gmail.com'
+        'password' => 'wbg9337t'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ko9anenq00rp7s00vmt1sr45tb'
+    '_csrf' => '9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'acervos.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '239'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://acervos.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://acervos.local/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-US,es-419;q=0.9,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ko9anenq00rp7s00vmt1sr45tb; _csrf=9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at acervos.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'acervos.local'
+    'SERVER_ADDR' => '10.10.10.12'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.10.1'
+    'DOCUMENT_ROOT' => '/var/www/acervos'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/acervos'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/acervos/index.php'
+    'REMOTE_PORT' => '54963'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1556290204.328
+    'REQUEST_TIME' => 1556290204
+]
+2019-04-26 14:50:06 [10.10.10.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+    in /var/www/acervos/_protected/views/layouts/main.php:90
+    in /var/www/acervos/_protected/controllers/SiteController.php:89
+2019-04-26 14:50:06 [10.10.10.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+2019-04-26 14:50:06 [10.10.10.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 't291951disuffgqitvtffim9gc'
+    '_csrf' => '461b8acbe1707ea2313a89988e8ccb3d4d6c1e51b9ae163742945699748d4e1da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5BpMaVZ8_tjUhVGwl-oDTT0Y-kttx6hQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'acervos.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://acervos.local/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-US,es-419;q=0.9,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=t291951disuffgqitvtffim9gc; _csrf=461b8acbe1707ea2313a89988e8ccb3d4d6c1e51b9ae163742945699748d4e1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225BpMaVZ8_tjUhVGwl-oDTT0Y-kttx6hQ%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at acervos.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'acervos.local'
+    'SERVER_ADDR' => '10.10.10.12'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.10.1'
+    'DOCUMENT_ROOT' => '/var/www/acervos'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/acervos'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/acervos/index.php'
+    'REMOTE_PORT' => '54963'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1556290206.049
+    'REQUEST_TIME' => 1556290206
+]
+2019-04-26 14:50:09 [10.10.10.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+    in /var/www/acervos/_protected/views/layouts/main.php:90
+    in /var/www/acervos/_protected/controllers/UserController.php:33
+2019-04-26 14:50:09 [10.10.10.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+2019-04-26 14:50:08 [10.10.10.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 't291951disuffgqitvtffim9gc'
+    '_csrf' => '461b8acbe1707ea2313a89988e8ccb3d4d6c1e51b9ae163742945699748d4e1da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5BpMaVZ8_tjUhVGwl-oDTT0Y-kttx6hQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'acervos.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://acervos.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-US,es-419;q=0.9,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=t291951disuffgqitvtffim9gc; _csrf=461b8acbe1707ea2313a89988e8ccb3d4d6c1e51b9ae163742945699748d4e1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225BpMaVZ8_tjUhVGwl-oDTT0Y-kttx6hQ%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at acervos.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'acervos.local'
+    'SERVER_ADDR' => '10.10.10.12'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.10.1'
+    'DOCUMENT_ROOT' => '/var/www/acervos'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/acervos'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/acervos/index.php'
+    'REMOTE_PORT' => '54972'
+    'REDIRECT_URL' => '/user/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1556290208.496
+    'REQUEST_TIME' => 1556290208
+]
+2019-04-26 14:50:17 [10.10.10.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+    in /var/www/acervos/_protected/views/layouts/main.php:90
+    in /var/www/acervos/_protected/controllers/SiteController.php:89
+2019-04-26 14:50:17 [10.10.10.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1
+2019-04-26 14:50:16 [10.10.10.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 't291951disuffgqitvtffim9gc'
+    '_csrf' => '461b8acbe1707ea2313a89988e8ccb3d4d6c1e51b9ae163742945699748d4e1da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5BpMaVZ8_tjUhVGwl-oDTT0Y-kttx6hQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'acervos.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://acervos.local/user/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-US,es-419;q=0.9,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=t291951disuffgqitvtffim9gc; _csrf=461b8acbe1707ea2313a89988e8ccb3d4d6c1e51b9ae163742945699748d4e1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225BpMaVZ8_tjUhVGwl-oDTT0Y-kttx6hQ%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at acervos.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'acervos.local'
+    'SERVER_ADDR' => '10.10.10.12'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.10.1'
+    'DOCUMENT_ROOT' => '/var/www/acervos'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/acervos'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/acervos/index.php'
+    'REMOTE_PORT' => '54990'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1556290216.371
+    'REQUEST_TIME' => 1556290216
+]

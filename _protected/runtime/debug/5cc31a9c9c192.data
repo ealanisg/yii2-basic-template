@@ -1,0 +1,442 @@
+a:14:{s:6:"config";s:2172:"a:5:{s:10:"phpVersion";s:37:"7.2.17-1+ubuntu16.04.1+deb.sury.org+3";s:10:"yiiVersion";s:10:"2.0.18-dev";s:11:"application";a:8:{s:3:"yii";s:10:"2.0.18-dev";s:4:"name";s:5:"BASIC";s:7:"version";s:3:"1.0";s:8:"language";s:2:"en";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:37:"7.2.17-1+ubuntu16.04.1+deb.sury.org+3";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:8:{s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:8:"2.0.10.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:61:"/var/www/acervos/_protected/vendor/yiisoft/yii2-bootstrap/src";}}s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.1.2.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:63:"/var/www/acervos/_protected/vendor/yiisoft/yii2-swiftmailer/src";}}s:25:"kartik-v/yii2-krajee-base";a:3:{s:4:"name";s:25:"kartik-v/yii2-krajee-base";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:12:"@kartik/base";s:64:"/var/www/acervos/_protected/vendor/kartik-v/yii2-krajee-base/src";}}s:22:"kartik-v/yii2-password";a:3:{s:4:"name";s:22:"kartik-v/yii2-password";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:16:"@kartik/password";s:61:"/var/www/acervos/_protected/vendor/kartik-v/yii2-password/src";}}s:24:"yiisoft/yii2-codeception";a:3:{s:4:"name";s:24:"yiisoft/yii2-codeception";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:16:"@yii/codeception";s:59:"/var/www/acervos/_protected/vendor/yiisoft/yii2-codeception";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:7:"2.1.2.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:57:"/var/www/acervos/_protected/vendor/yiisoft/yii2-debug/src";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.1.0.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:55:"/var/www/acervos/_protected/vendor/yiisoft/yii2-gii/src";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:53:"/var/www/acervos/_protected/vendor/yiisoft/yii2-faker";}}}}";s:7:"request";s:5192:"a:15:{s:7:"flashes";a:0:{}s:10:"statusCode";i:302;s:14:"requestHeaders";a:13:{s:4:"host";s:13:"acervos.local";s:10:"connection";s:10:"keep-alive";s:14:"content-length";s:3:"239";s:13:"cache-control";s:9:"max-age=0";s:6:"origin";s:20:"http://acervos.local";s:25:"upgrade-insecure-requests";s:1:"1";s:12:"content-type";s:33:"application/x-www-form-urlencoded";s:10:"user-agent";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36";s:6:"accept";s:85:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";s:7:"referer";s:27:"http://acervos.local/signup";s:15:"accept-encoding";s:13:"gzip, deflate";s:15:"accept-language";s:27:"es-US,es-419;q=0.9,es;q=0.8";s:6:"cookie";s:210:"PHPSESSID=ko9anenq00rp7s00vmt1sr45tb; _csrf=9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ%22%3B%7D";}s:15:"responseHeaders";a:6:{s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:35:"no-store, no-cache, must-revalidate";s:6:"Pragma";s:8:"no-cache";s:10:"Set-Cookie";a:3:{i:0;s:54:"PHPSESSID=t291951disuffgqitvtffim9gc; path=/; HttpOnly";i:1;s:85:"_identity=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; HttpOnly";i:2;s:190:"_csrf=461b8acbe1707ea2313a89988e8ccb3d4d6c1e51b9ae163742945699748d4e1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225BpMaVZ8_tjUhVGwl-oDTT0Y-kttx6hQ%22%3B%7D; path=/; HttpOnly";}s:8:"Location";s:21:"http://acervos.local/";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";}s:5:"route";s:11:"site/signup";s:6:"action";s:46:"app\controllers\SiteController::actionSignup()";s:12:"actionParams";a:0:{}s:7:"general";a:5:{s:6:"method";s:4:"POST";s:6:"isAjax";b:0;s:6:"isPjax";b:0;s:7:"isFlash";b:0;s:18:"isSecureConnection";b:0;}s:11:"requestBody";a:3:{s:12:"Content Type";s:33:"application/x-www-form-urlencoded";s:3:"Raw";s:239:"_csrf=9hAGBDLX7RY_s6i3HpA9MY6p43VVTpZNeikah07BHdOCXU5yZJCiSWqe4MJp8WJ6vOyoAx0v9CEMBG6-F4JLgg%3D%3D&SignupForm%5Busername%5D=ealanisg%40nubaltum.com&SignupForm%5Bemail%5D=ealanisg%40gmail.com&SignupForm%5Bpassword%5D=wbg9337t&signup-button=";s:17:"Decoded to Params";a:3:{s:5:"_csrf";s:88:"9hAGBDLX7RY_s6i3HpA9MY6p43VVTpZNeikah07BHdOCXU5yZJCiSWqe4MJp8WJ6vOyoAx0v9CEMBG6-F4JLgg==";s:10:"SignupForm";a:3:{s:8:"username";s:21:"ealanisg@nubaltum.com";s:5:"email";s:18:"ealanisg@gmail.com";s:8:"password";s:8:"wbg9337t";}s:13:"signup-button";s:0:"";}}s:6:"SERVER";a:38:{s:15:"REDIRECT_STATUS";s:3:"200";s:9:"HTTP_HOST";s:13:"acervos.local";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"239";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:11:"HTTP_ORIGIN";s:20:"http://acervos.local";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:15:"HTTP_USER_AGENT";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36";s:11:"HTTP_ACCEPT";s:85:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";s:12:"HTTP_REFERER";s:27:"http://acervos.local/signup";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:20:"HTTP_ACCEPT_LANGUAGE";s:27:"es-US,es-419;q=0.9,es;q=0.8";s:11:"HTTP_COOKIE";s:210:"PHPSESSID=ko9anenq00rp7s00vmt1sr45tb; _csrf=9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ%22%3B%7D";s:4:"PATH";s:60:"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";s:16:"SERVER_SIGNATURE";s:74:"<address>Apache/2.4.18 (Ubuntu) Server at acervos.local Port 80</address>
+";s:15:"SERVER_SOFTWARE";s:22:"Apache/2.4.18 (Ubuntu)";s:11:"SERVER_NAME";s:13:"acervos.local";s:11:"SERVER_ADDR";s:11:"10.10.10.12";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:10:"10.10.10.1";s:13:"DOCUMENT_ROOT";s:16:"/var/www/acervos";s:14:"REQUEST_SCHEME";s:4:"http";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:16:"/var/www/acervos";s:12:"SERVER_ADMIN";s:18:"[no address given]";s:15:"SCRIPT_FILENAME";s:26:"/var/www/acervos/index.php";s:11:"REMOTE_PORT";s:5:"54963";s:12:"REDIRECT_URL";s:7:"/signup";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"REQUEST_URI";s:7:"/signup";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1556290204.328;s:12:"REQUEST_TIME";i:1556290204;}s:3:"GET";a:0:{}s:4:"POST";a:3:{s:5:"_csrf";s:88:"9hAGBDLX7RY_s6i3HpA9MY6p43VVTpZNeikah07BHdOCXU5yZJCiSWqe4MJp8WJ6vOyoAx0v9CEMBG6-F4JLgg==";s:10:"SignupForm";a:3:{s:8:"username";s:21:"ealanisg@nubaltum.com";s:5:"email";s:18:"ealanisg@gmail.com";s:8:"password";s:8:"wbg9337t";}s:13:"signup-button";s:0:"";}s:6:"COOKIE";a:2:{s:9:"PHPSESSID";s:26:"ko9anenq00rp7s00vmt1sr45tb";s:5:"_csrf";s:130:"9f13a4241b37885a732f669003c1b08c33f5daffc5070b8c3c431ab587f8dabda:2:{i:0;s:5:"_csrf";i:1;s:32:"tMHvVGO_U-Huwa_K2EKvHablv-t9YCVQ";}";}s:5:"FILES";a:0:{}s:7:"SESSION";a:2:{s:7:"__flash";a:0:{}s:4:"__id";i:1;}}";s:6:"router";s:1421:"a:3:{s:8:"messages";a:7:{i:7;a:6:{i:0;a:3:{s:4:"rule";s:3:"gii";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1556290204.687457;i:4;a:0:{}i:5;i:1328024;}i:8;a:6:{i:0;a:3:{s:4:"rule";s:12:"gii/<id:\w+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1556290204.687537;i:4;a:0:{}i:5;i:1328816;}i:9;a:6:{i:0;a:3:{s:4:"rule";s:41:"gii/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1556290204.687628;i:4;a:0:{}i:5;i:1329968;}i:10;a:6:{i:0;a:3:{s:4:"rule";s:5:"debug";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1556290204.687668;i:4;a:0:{}i:5;i:1330752;}i:11;a:6:{i:0;a:3:{s:4:"rule";s:43:"debug/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1556290204.687779;i:4;a:0:{}i:5;i:1331584;}i:12;a:6:{i:0;s:41:"Request parsed with URL rule: <alias:\w+>";i:1;i:8;i:2;s:29:"yii\web\UrlRule::parseRequest";i:3;d:1556290204.687849;i:4;a:0:{}i:5;i:1333384;}i:13;a:6:{i:0;a:3:{s:4:"rule";s:11:"<alias:\w+>";s:5:"match";b:1;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1556290204.68786;i:4;a:0:{}i:5;i:1333304;}}s:5:"route";s:11:"site/signup";s:6:"action";s:46:"app\controllers\SiteController::actionSignup()";}";s:3:"log";s:14810:"a:1:{s:8:"messages";a:27:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1556290204.500313;i:4;a:0:{}i:5;i:915472;}i:1;a:6:{i:0;s:37:"Bootstrap with app\components\Aliases";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1556290204.51622;i:4;a:0:{}i:5;i:1003528;}i:2;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1556290204.516243;i:4;a:0:{}i:5;i:1004216;}i:3;a:6:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1556290204.617022;i:4;a:0:{}i:5;i:1193496;}i:4;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1556290204.635357;i:4;a:0:{}i:5;i:1198264;}i:5;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1556290204.668528;i:4;a:0:{}i:5;i:1296504;}i:6;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1556290204.674669;i:4;a:0:{}i:5;i:1302176;}i:14;a:6:{i:0;s:30:"Route requested: 'site/signup'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1556290204.687872;i:4;a:0:{}i:5;i:1332608;}i:15;a:6:{i:0;s:25:"Route to run: site/signup";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1556290204.700836;i:4;a:0:{}i:5;i:1349912;}i:16;a:6:{i:0;s:62:"Running action: app\controllers\SiteController::actionSignup()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1556290204.718567;i:4;a:0:{}i:5;i:1439888;}i:17;a:6:{i:0;s:69:"Opening DB connection: sqlsrv:server=10.10.10.12;database=acervos_dev";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1556290205.018545;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2037080;}i:20;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.129447;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2048832;}i:23;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.133053;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2053528;}i:26;a:6:{i:0;s:480:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'user' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.164052;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2070112;}i:29;a:6:{i:0;s:750:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'user' AND [t1].[table_schema] = 'dbo'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.168942;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2073160;}i:32;a:6:{i:0;s:630:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.user')";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.238058;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2087368;}i:35;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.753065;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2114080;}i:38;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.754452;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2119504;}i:41;a:6:{i:0;s:290:"INSERT INTO [user] ([username], [email], [password_hash], [auth_key], [status], [created_at], [updated_at]) VALUES ('ealanisg@nubaltum.com', 'ealanisg@gmail.com', '$2y$13$s5PAxXy7938TBuVl9mb6.ew.M4TB4lEpsKj7lqife/Ys69hKHV8OC', 'saZBBqFhgFOmiFDYIj-gbEkhOPiqQYvf', 10, 1556290205, 1556290205)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.755691;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2123256;}i:44;a:6:{i:0;s:27:"SELECT COUNT(*) FROM [user]";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.777675;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:31;s:8:"function";s:5:"count";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2130744;}i:47;a:6:{i:0;s:51:"SELECT * FROM [auth_item] WHERE [name]='theCreator'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.79333;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:41;s:8:"function";s:7:"getRole";s:5:"class";s:20:"yii\rbac\BaseManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2224816;}i:50;a:6:{i:0;s:491:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'auth_assignment' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.812811;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2242544;}i:53;a:6:{i:0;s:761:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'auth_assignment' AND [t1].[table_schema] = 'dbo'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.818107;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2246760;}i:56;a:6:{i:0;s:641:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.auth_assignment')";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.876849;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2255736;}i:59;a:6:{i:0;s:105:"INSERT INTO [auth_assignment] ([user_id], [item_name], [created_at]) VALUES (1, 'theCreator', 1556290205)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.878258;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2259488;}i:62;a:6:{i:0;s:51:"User '1' logged in from 10.10.10.1 with duration 0.";i:1;i:4;i:2;s:19:"yii\web\User::login";i:3;d:1556290205.894012;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:282;s:8:"function";s:5:"login";s:5:"class";s:12:"yii\web\User";s:4:"type";s:2:"->";}}i:5;i:2263592;}i:63;a:6:{i:0;s:99:"Access to debugger is denied due to IP address restriction. The requesting IP address is 10.10.10.1";i:1;i:2;i:2;s:29:"yii\debug\Module::checkAccess";i:3;d:1556290205.905383;i:4;a:0:{}i:5;i:2256024;}}}";s:9:"profiling";s:25497:"a:3:{s:6:"memory";i:2616584;s:4:"time";d:1.508004903793335;s:8:"messages";a:30:{i:18;a:6:{i:0;s:69:"Opening DB connection: sqlsrv:server=10.10.10.12;database=acervos_dev";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1556290205.018579;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2038208;}i:19;a:6:{i:0;s:69:"Opening DB connection: sqlsrv:server=10.10.10.12;database=acervos_dev";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1556290205.1294;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2049944;}i:21;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.12953;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2051928;}i:22;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.131881;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2054208;}i:24;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.133305;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2056544;}i:25;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.136149;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2058824;}i:27;a:6:{i:0;s:480:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'user' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.164168;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2073808;}i:28;a:6:{i:0;s:480:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'user' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.168592;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2077368;}i:30;a:6:{i:0;s:750:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'user' AND [t1].[table_schema] = 'dbo'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.169034;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2077184;}i:31;a:6:{i:0;s:750:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'user' AND [t1].[table_schema] = 'dbo'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.230141;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2085944;}i:33;a:6:{i:0;s:630:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.user')";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.238163;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2093216;}i:34;a:6:{i:0;s:630:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.user')";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.239063;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2095584;}i:36;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.753214;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2117472;}i:37;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.753826;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2120128;}i:39;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.754541;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2122896;}i:40;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.755109;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2125552;}i:42;a:6:{i:0;s:290:"INSERT INTO [user] ([username], [email], [password_hash], [auth_key], [status], [created_at], [updated_at]) VALUES ('ealanisg@nubaltum.com', 'ealanisg@gmail.com', '$2y$13$s5PAxXy7938TBuVl9mb6.ew.M4TB4lEpsKj7lqife/Ys69hKHV8OC', 'saZBBqFhgFOmiFDYIj-gbEkhOPiqQYvf', 10, 1556290205, 1556290205)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.755761;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2125448;}i:43;a:6:{i:0;s:290:"INSERT INTO [user] ([username], [email], [password_hash], [auth_key], [status], [created_at], [updated_at]) VALUES ('ealanisg@nubaltum.com', 'ealanisg@gmail.com', '$2y$13$s5PAxXy7938TBuVl9mb6.ew.M4TB4lEpsKj7lqife/Ys69hKHV8OC', 'saZBBqFhgFOmiFDYIj-gbEkhOPiqQYvf', 10, 1556290205, 1556290205)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.761757;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2127296;}i:45;a:6:{i:0;s:27:"SELECT COUNT(*) FROM [user]";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.777764;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:31;s:8:"function";s:5:"count";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2132928;}i:46;a:6:{i:0;s:27:"SELECT COUNT(*) FROM [user]";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.779536;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:31;s:8:"function";s:5:"count";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2135640;}i:48;a:6:{i:0;s:51:"SELECT * FROM [auth_item] WHERE [name]='theCreator'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.793416;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:41;s:8:"function";s:7:"getRole";s:5:"class";s:20:"yii\rbac\BaseManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2227800;}i:49;a:6:{i:0;s:51:"SELECT * FROM [auth_item] WHERE [name]='theCreator'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.795239;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:41;s:8:"function";s:7:"getRole";s:5:"class";s:20:"yii\rbac\BaseManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2232272;}i:51;a:6:{i:0;s:491:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'auth_assignment' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.812933;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2246624;}i:52;a:6:{i:0;s:491:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'auth_assignment' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.817729;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2251032;}i:54;a:6:{i:0;s:761:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'auth_assignment' AND [t1].[table_schema] = 'dbo'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.818215;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2251160;}i:55;a:6:{i:0;s:761:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'auth_assignment' AND [t1].[table_schema] = 'dbo'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.876423;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2256336;}i:57;a:6:{i:0;s:641:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.auth_assignment')";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.876924;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2260688;}i:58;a:6:{i:0;s:641:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.auth_assignment')";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.877819;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2264936;}i:60;a:6:{i:0;s:105:"INSERT INTO [auth_assignment] ([user_id], [item_name], [created_at]) VALUES (1, 'theCreator', 1556290205)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.878347;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2262736;}i:61;a:6:{i:0;s:105:"INSERT INTO [auth_assignment] ([user_id], [item_name], [created_at]) VALUES (1, 'theCreator', 1556290205)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.881673;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2264960;}}}";s:2:"db";s:24701:"a:1:{s:8:"messages";a:28:{i:21;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.12953;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2051928;}i:22;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.131881;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2054208;}i:24;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.133305;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2056544;}i:25;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.136149;i:4;a:1:{i:0;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:260;s:8:"function";s:8:"validate";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:2058824;}i:27;a:6:{i:0;s:480:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'user' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.164168;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2073808;}i:28;a:6:{i:0;s:480:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'user' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.168592;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2077368;}i:30;a:6:{i:0;s:750:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'user' AND [t1].[table_schema] = 'dbo'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.169034;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2077184;}i:31;a:6:{i:0;s:750:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'user' AND [t1].[table_schema] = 'dbo'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.230141;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2085944;}i:33;a:6:{i:0;s:630:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.user')";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.238163;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2093216;}i:34;a:6:{i:0;s:630:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.user')";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.239063;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:103;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2095584;}i:36;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.753214;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2117472;}i:37;a:6:{i:0;s:111:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[username]='ealanisg@nubaltum.com') THEN 1 ELSE 0 END";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.753826;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2120128;}i:39;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.754541;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2122896;}i:40;a:6:{i:0;s:105:"SELECT CASE WHEN EXISTS(SELECT * FROM [user] WHERE [user].[email]='ealanisg@gmail.com') THEN 1 ELSE 0 END";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.755109;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2125552;}i:42;a:6:{i:0;s:290:"INSERT INTO [user] ([username], [email], [password_hash], [auth_key], [status], [created_at], [updated_at]) VALUES ('ealanisg@nubaltum.com', 'ealanisg@gmail.com', '$2y$13$s5PAxXy7938TBuVl9mb6.ew.M4TB4lEpsKj7lqife/Ys69hKHV8OC', 'saZBBqFhgFOmiFDYIj-gbEkhOPiqQYvf', 10, 1556290205, 1556290205)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.755761;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2125448;}i:43;a:6:{i:0;s:290:"INSERT INTO [user] ([username], [email], [password_hash], [auth_key], [status], [created_at], [updated_at]) VALUES ('ealanisg@nubaltum.com', 'ealanisg@gmail.com', '$2y$13$s5PAxXy7938TBuVl9mb6.ew.M4TB4lEpsKj7lqife/Ys69hKHV8OC', 'saZBBqFhgFOmiFDYIj-gbEkhOPiqQYvf', 10, 1556290205, 1556290205)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.761757;i:4;a:2:{i:0;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2127296;}i:45;a:6:{i:0;s:27:"SELECT COUNT(*) FROM [user]";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.777764;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:31;s:8:"function";s:5:"count";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2132928;}i:46;a:6:{i:0;s:27:"SELECT COUNT(*) FROM [user]";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.779536;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:31;s:8:"function";s:5:"count";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2135640;}i:48;a:6:{i:0;s:51:"SELECT * FROM [auth_item] WHERE [name]='theCreator'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.793416;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:41;s:8:"function";s:7:"getRole";s:5:"class";s:20:"yii\rbac\BaseManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2227800;}i:49;a:6:{i:0;s:51:"SELECT * FROM [auth_item] WHERE [name]='theCreator'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.795239;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:41;s:8:"function";s:7:"getRole";s:5:"class";s:20:"yii\rbac\BaseManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2232272;}i:51;a:6:{i:0;s:491:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'auth_assignment' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.812933;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2246624;}i:52;a:6:{i:0;s:491:"SELECT
+    [kcu].[constraint_name] AS [index_name],
+    [kcu].[column_name] AS [field_name]
+FROM [INFORMATION_SCHEMA].[KEY_COLUMN_USAGE] AS [kcu]
+LEFT JOIN [INFORMATION_SCHEMA].[TABLE_CONSTRAINTS] AS [tc] ON
+    [kcu].[table_schema] = [tc].[table_schema] AND
+    [kcu].[table_name] = [tc].[table_name] AND
+    [kcu].[constraint_name] = [tc].[constraint_name]
+WHERE
+    [tc].[constraint_type] = 'PRIMARY KEY' AND
+    [kcu].[table_name] = 'auth_assignment' AND
+    [kcu].[table_schema] = 'dbo'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.817729;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2251032;}i:54;a:6:{i:0;s:761:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'auth_assignment' AND [t1].[table_schema] = 'dbo'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.818215;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2251160;}i:55;a:6:{i:0;s:761:"SELECT
+ [t1].[column_name],
+ [t1].[is_nullable],
+ [t1].[data_type],
+ [t1].[column_default],
+ COLUMNPROPERTY(OBJECT_ID([t1].[table_schema] + '.' + [t1].[table_name]), [t1].[column_name], 'IsIdentity') AS is_identity,
+ (
+    SELECT CONVERT(VARCHAR, [t2].[value])
+		FROM [sys].[extended_properties] AS [t2]
+		WHERE
+			[t2].[class] = 1 AND
+			[t2].[class_desc] = 'OBJECT_OR_COLUMN' AND
+			[t2].[name] = 'MS_Description' AND
+			[t2].[major_id] = OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[table_name]) AND
+			[t2].[minor_id] = COLUMNPROPERTY(OBJECT_ID([t1].[TABLE_SCHEMA] + '.' + [t1].[TABLE_NAME]), [t1].[COLUMN_NAME], 'ColumnID')
+ ) as comment
+FROM [INFORMATION_SCHEMA].[COLUMNS] AS [t1]
+WHERE [t1].[table_name] = 'auth_assignment' AND [t1].[table_schema] = 'dbo'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.876423;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2256336;}i:57;a:6:{i:0;s:641:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.auth_assignment')";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.876924;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2260688;}i:58;a:6:{i:0;s:641:"SELECT
+	[fk].[name] AS [fk_name],
+	[cp].[name] AS [fk_column_name],
+	OBJECT_NAME([fk].[referenced_object_id]) AS [uq_table_name],
+	[cr].[name] AS [uq_column_name]
+FROM
+	[sys].[foreign_keys] AS [fk]
+	INNER JOIN [sys].[foreign_key_columns] AS [fkc] ON
+		[fk].[object_id] = [fkc].[constraint_object_id]
+	INNER JOIN [sys].[columns] AS [cp] ON
+		[fk].[parent_object_id] = [cp].[object_id] AND
+		[fkc].[parent_column_id] = [cp].[column_id]
+	INNER JOIN [sys].[columns] AS [cr] ON
+		[fk].[referenced_object_id] = [cr].[object_id] AND
+		[fkc].[referenced_column_id] = [cr].[column_id]
+WHERE
+	[fk].[parent_object_id] = OBJECT_ID('dbo.auth_assignment')";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1556290205.877819;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2264936;}i:60;a:6:{i:0;s:105:"INSERT INTO [auth_assignment] ([user_id], [item_name], [created_at]) VALUES (1, 'theCreator', 1556290205)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.878347;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2262736;}i:61;a:6:{i:0;s:105:"INSERT INTO [auth_assignment] ([user_id], [item_name], [created_at]) VALUES (1, 'theCreator', 1556290205)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1556290205.881673;i:4;a:3:{i:0;a:5:{s:4:"file";s:55:"/var/www/acervos/_protected/rbac/helpers/RbacHelper.php";s:4:"line";i:42;s:8:"function";s:6:"assign";s:5:"class";s:18:"yii\rbac\DbManager";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:49:"/var/www/acervos/_protected/models/SignupForm.php";s:4:"line";i:115;s:8:"function";s:10:"assignRole";s:5:"class";s:27:"app\rbac\helpers\RbacHelper";s:4:"type";s:2:"::";}i:2;a:5:{s:4:"file";s:58:"/var/www/acervos/_protected/controllers/SiteController.php";s:4:"line";i:265;s:8:"function";s:6:"signup";s:5:"class";s:21:"app\models\SignupForm";s:4:"type";s:2:"->";}}i:5;i:2264960;}}}";s:5:"event";s:4842:"a:28:{i:0;a:5:{s:4:"time";d:1556290204.684814;s:4:"name";s:13:"beforeRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:1;a:5:{s:4:"time";d:1556290204.70352;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:2;a:5:{s:4:"time";d:1556290204.718465;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:30:"app\controllers\SiteController";}i:3;a:5:{s:4:"time";d:1556290204.810891;s:4:"name";s:14:"beforeValidate";s:5:"class";s:19:"yii\base\ModelEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"app\models\SignupForm";}i:4;a:5:{s:4:"time";d:1556290204.880761;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:5;a:5:{s:4:"time";d:1556290204.88121;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:6;a:5:{s:4:"time";d:1556290205.129389;s:4:"name";s:9:"afterOpen";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:7;a:5:{s:4:"time";d:1556290205.132794;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:8;a:5:{s:4:"time";d:1556290205.13287;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:9;a:5:{s:4:"time";d:1556290205.13673;s:4:"name";s:13:"afterValidate";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"app\models\SignupForm";}i:10;a:5:{s:4:"time";d:1556290205.15149;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:15:"app\models\User";}i:11;a:5:{s:4:"time";d:1556290205.752321;s:4:"name";s:14:"beforeValidate";s:5:"class";s:19:"yii\base\ModelEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:15:"app\models\User";}i:12;a:5:{s:4:"time";d:1556290205.752884;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:13;a:5:{s:4:"time";d:1556290205.752934;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:14;a:5:{s:4:"time";d:1556290205.754262;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:15;a:5:{s:4:"time";d:1556290205.754322;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:16;a:5:{s:4:"time";d:1556290205.755464;s:4:"name";s:13:"afterValidate";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:15:"app\models\User";}i:17;a:5:{s:4:"time";d:1556290205.755531;s:4:"name";s:12:"beforeInsert";s:5:"class";s:19:"yii\base\ModelEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:15:"app\models\User";}i:18;a:5:{s:4:"time";d:1556290205.76883;s:4:"name";s:11:"afterInsert";s:5:"class";s:21:"yii\db\AfterSaveEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:15:"app\models\User";}i:19;a:5:{s:4:"time";d:1556290205.777572;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:20;a:5:{s:4:"time";d:1556290205.888181;s:4:"name";s:11:"beforeLogin";s:5:"class";s:17:"yii\web\UserEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\User";}i:21;a:5:{s:4:"time";d:1556290205.894067;s:4:"name";s:10:"afterLogin";s:5:"class";s:17:"yii\web\UserEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\User";}i:22;a:5:{s:4:"time";d:1556290205.899818;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:30:"app\controllers\SiteController";}i:23;a:5:{s:4:"time";d:1556290205.89984;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:24;a:5:{s:4:"time";d:1556290205.89986;s:4:"name";s:12:"afterRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:25;a:5:{s:4:"time";d:1556290205.899877;s:4:"name";s:10:"beforeSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:26;a:5:{s:4:"time";d:1556290205.905409;s:4:"name";s:12:"afterPrepare";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:27;a:5:{s:4:"time";d:1556290205.905566;s:4:"name";s:9:"afterSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}}";s:6:"assets";s:6:"a:0:{}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:91:"a:3:{s:5:"start";d:1556290204.420227;s:3:"end";d:1556290205.928823;s:6:"memory";i:2616584;}";s:4:"user";s:2924:"a:5:{s:2:"id";i:1;s:8:"identity";a:10:{s:2:"id";s:1:"1";s:8:"username";s:23:"'ealanisg@nubaltum.com'";s:5:"email";s:20:"'ealanisg@gmail.com'";s:13:"password_hash";s:62:"'$2y$13$s5PAxXy7938TBuVl9mb6.ew.M4TB4lEpsKj7lqife/Ys69hKHV8OC'";s:6:"status";s:2:"10";s:8:"auth_key";s:34:"'saZBBqFhgFOmiFDYIj-gbEkhOPiqQYvf'";s:20:"password_reset_token";s:4:"null";s:24:"account_activation_token";s:4:"null";s:10:"created_at";s:10:"1556290205";s:10:"updated_at";s:10:"1556290205";}s:10:"attributes";a:10:{i:0;a:2:{s:9:"attribute";s:2:"id";s:5:"label";s:2:"ID";}i:1;a:2:{s:9:"attribute";s:8:"username";s:5:"label";s:8:"Username";}i:2;a:2:{s:9:"attribute";s:5:"email";s:5:"label";s:5:"Email";}i:3;a:2:{s:9:"attribute";s:13:"password_hash";s:5:"label";s:13:"Password Hash";}i:4;a:2:{s:9:"attribute";s:6:"status";s:5:"label";s:6:"Status";}i:5;a:2:{s:9:"attribute";s:8:"auth_key";s:5:"label";s:8:"Auth Key";}i:6;a:2:{s:9:"attribute";s:20:"password_reset_token";s:5:"label";s:20:"Password Reset Token";}i:7;a:2:{s:9:"attribute";s:24:"account_activation_token";s:5:"label";s:24:"Account Activation Token";}i:8;a:2:{s:9:"attribute";s:10:"created_at";s:5:"label";s:10:"Created At";}i:9;a:2:{s:9:"attribute";s:10:"updated_at";s:5:"label";s:10:"Updated At";}}s:13:"rolesProvider";O:26:"yii\data\ArrayDataProvider":12:{s:3:"key";N;s:9:"allModels";a:1:{s:10:"theCreator";a:7:{s:4:"type";s:1:"1";s:4:"name";s:10:"theCreator";s:11:"description";s:4:"You!";s:8:"ruleName";N;s:4:"data";s:4:"null";s:9:"createdAt";s:10:"1556289582";s:9:"updatedAt";s:10:"1556289582";}}s:10:"modelClass";N;s:2:"id";N;s:32:" yii\data\BaseDataProvider _sort";N;s:38:" yii\data\BaseDataProvider _pagination";N;s:32:" yii\data\BaseDataProvider _keys";N;s:34:" yii\data\BaseDataProvider _models";N;s:38:" yii\data\BaseDataProvider _totalCount";N;s:27:" yii\base\Component _events";a:0:{}s:35:" yii\base\Component _eventWildcards";a:0:{}s:30:" yii\base\Component _behaviors";N;}s:19:"permissionsProvider";O:26:"yii\data\ArrayDataProvider":12:{s:3:"key";N;s:9:"allModels";a:2:{s:11:"manageUsers";a:7:{s:4:"type";s:1:"2";s:4:"name";s:11:"manageUsers";s:11:"description";s:35:"Allows admin+ roles to manage users";s:8:"ruleName";N;s:4:"data";s:4:"null";s:9:"createdAt";s:10:"1556289582";s:9:"updatedAt";s:10:"1556289582";}s:17:"usePremiumContent";a:7:{s:4:"type";s:1:"2";s:4:"name";s:17:"usePremiumContent";s:11:"description";s:44:"Allows premium+ roles to use premium content";s:8:"ruleName";N;s:4:"data";s:4:"null";s:9:"createdAt";s:10:"1556289582";s:9:"updatedAt";s:10:"1556289582";}}s:10:"modelClass";N;s:2:"id";s:4:"dp-1";s:32:" yii\data\BaseDataProvider _sort";N;s:38:" yii\data\BaseDataProvider _pagination";N;s:32:" yii\data\BaseDataProvider _keys";N;s:34:" yii\data\BaseDataProvider _models";N;s:38:" yii\data\BaseDataProvider _totalCount";N;s:27:" yii\base\Component _events";a:0:{}s:35:" yii\base\Component _eventWildcards";a:0:{}s:30:" yii\base\Component _behaviors";N;}}";s:4:"dump";s:6:"a:0:{}";s:7:"summary";a:10:{s:3:"tag";s:13:"5cc31a9c9c192";s:3:"url";s:27:"http://acervos.local/signup";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:10:"10.10.10.1";s:4:"time";d:1556290204.328;s:10:"statusCode";i:302;s:8:"sqlCount";i:14;s:9:"mailCount";i:0;s:9:"mailFiles";a:0:{}}s:10:"exceptions";a:0:{}}
